@@ -1,0 +1,58 @@
+@import "../variables/main.scss";
+
+.am-btn {
+  padding: 0.75rem 1.75rem;
+  border-radius: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-size 0.2s,box-shadow 0.2s, transform 0.2s;
+  background-size: 100%;
+
+  &:hover {
+    background-size: 150%;
+    transform: rotateZ(-1deg) translate(-1px, -3px);
+    box-shadow: -1px 3px 5px 0px rgba(120, 26, 119, 0.25);
+  }
+}
+
+.am-btn--primary {
+  color: white;
+  background: rgb(39, 37, 120);
+  background-size: 100%;
+  background-position: center;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#272578",endColorstr="#b92134",GradientType=1);
+}
+
+
+.am-btn--tertiary {
+  color: $color-blue;
+  background: white;
+}
+
+.am-btn--secondary {
+  color: white;
+}
+
+.am-btn--small {
+  padding: 0.5rem 1rem;
+  font-size: .875rem;
+}

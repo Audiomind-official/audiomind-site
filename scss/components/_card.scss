@@ -1,0 +1,14 @@
+@import '../variables/main';
+
+.am-card {
+  background: $color-light-01;
+  padding: 0.25rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+
+  .am-card__content {
+    margin: 1.5rem;
+    flex: 1;
+  }
+}

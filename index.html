@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Audiomind | O gravador de áudio inteligente</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5T8KPV4");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5T8KPV4"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a id="inicio"></a>
+    <header class="am-header">
+      <div class="am-menu container">
+        <div class="am-menu__logo">
+          <img
+            src="images/audiomind-logo-positivo.png"
+            alt="Audiomind"
+            class="mt-sm"
+          />
+        </div>
+        <div class="am-menu__nav">
+          <ul class="am-menu__items hide-xs-only">
+            <li class="am-menu__item">
+              <a href="#inicio" class="am-menu__link">Início</a>
+            </li>
+            <li class="am-menu__item">
+              <a href="#como-funciona" class="am-menu__link">Como funciona?</a>
+            </li>
+            <li class="am-menu__item">
+              <a href="#planos" class="am-menu__link">Planos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="am-menu__cta">
+          <ul class="am-menu__items">
+            <li class="am-menu__item">
+              <a href="https://app.audiomind.com.br/" class="am-menu__link"
+                >Entrar</a
+              >
+            </li>
+            <li class="am-menu__item">
+              <a
+                href="https://app.audiomind.com.br/signup"
+                class="am-btn--secondary am-btn bg-blue am-btn--small"
+                >Criar conta</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <h1>Ouça seus clientes, monitore suas emoções</h1>
+
+            <p>
+              A Audiomind é uma exclusiva solução de áudio multidevices para
+              interação com clientes e qualificação de contatos através de
+              relatórios e análises comportamentais.
+            </p>
+
+            <a
+              href="https://app.audiomind.com.br/signup"
+              class="am-btn am-btn--primary mb-xxl"
+              >Criar conta</a
+            >
+          </div>
+          <div
+            class="col-md-6 col-xs-12"
+            style="height: 10rem; position: relative"
+          >
+            <img
+              src="images/graph.svg"
+              class="am-asset-shape hide-xs-only hide-sm-only"
+              alt=""
+            />
+            <div class="" style="margin: auto">
+              <script
+                src="https://app.audiomind.com.br/build/app.bundle.js"
+                id="audiomind-script"
+              ></script>
+              <script>
+                new Audiomind({
+                  propertyId: "5fa356588dacd37345c248bc",
+                  onRecorderSubmitted: function () {
+                    // Evento de conversão GTM
+                  },
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="container mt-xxl pt-lg">
+        <div class="row mt-xl mb-xl align-center">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <img
+              src="images/photos@2x.png"
+              class="max-full-width"
+              alt=""
+              style="padding: 0 3rem"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h2>Audiominders a geração da voz</h2>
+
+            <p>
+              Eles pensam e falam! Usam a voz para buscar informações, ligar
+              para alguém, tocar uma música ou, simplesmente, checar a hora.
+            </p>
+
+            <p>
+              Querem agilidade, conveniência e personalização. São consumidores
+              sedentos por uma jornada de compra diferenciada e uma experiência
+              incrível.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradient">
+        <div class="container row text-center">
+          <div class="col-xs-12 text-center text-white mb-lg mt-lg">
+            <h2 class="mb-lg">Prepare-se pra geração audiominder!</h2>
+            <a href="" class="am-btn am-btn--tertiary text-pink">Criar conta</a>
+          </div>
+        </div>
+      </section>
+
+      <a id="como-funciona"></a>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-xs-12 mt-xxl">
+            <h2 class="text-center">O gravador de áudio inteligente</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div>
+              <img
+                src="images/ico-analise@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Análise de sentimento</h3>
+              <p class="mt-none">
+                Os textos transcritos passam por inteligência artificial que
+                classifica a emoção dos seus contatos ajudando no processo de
+                qualificação.
+              </p>
+            </div>
+
+            <div>
+              <img
+                src="images/ico-coleta@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Coleta de leads por áudio</h3>
+              <p class="mt-none">
+                Forneça a seus clientes mais um método de se comunicar de forma
+                mais conversacional com sua empresa.
+              </p>
+            </div>
+
+            <div>
+              <img
+                src="images/ico-preenchimento@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Preenchimento automático</h3>
+              <p class="mt-none">
+                A plataforma é inteligente e identifica quando a pessoa se
+                apresenta no áudio, preenchendo o nome automaticamente.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div>
+              <img
+                src="images/ico-transcricao@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Transcrição de áudio</h3>
+              <p class="mt-none">
+                Seus clientes falam e você lê. O gravador audiomind conta com
+                recurso de transcrição de áudio em tempo real para as mensagens
+                enviadas.
+              </p>
+            </div>
+            <div>
+              <img
+                src="images/ico-palavras@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Palavras-chave</h3>
+              <p class="mt-none">
+                Encontre as palavras-chave de forma inteligente com o
+                identificador de entidades nos textos.
+              </p>
+            </div>
+            <div>
+              <img
+                src="images/ico-notificacoes@2x.png"
+                class="am-feature-icon"
+                alt=""
+              />
+              <h3 class="mb-none">Notificações por e-mail</h3>
+              <p class="mt-none">
+                Receba todas suas mensagens no seu e-mail já com a transcrição
+                dos áudios.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 flex align-center">
+            <div>
+              <div class="am-card">
+                <div class="am-card__content text-center">
+                  <div class="mb-sm">Grave sua mensagem</div>
+                  <img src="images/record-button.svg" alt="" />
+                </div>
+              </div>
+              <p class="text-center">
+                <img src="images/seta.svg" alt="" />
+              </p>
+              <div class="am-card">
+                <div class="am-card__content">
+                  <div class="display-flex">
+                    <img
+                      src="images/emotion.svg"
+                      alt=""
+                      width="32"
+                      class="mr-sm"
+                    />
+                    <div>
+                      <div class="text-orange"><strong>João</strong></div>
+                      <div>Esse áudio foi <strong>positivo</strong></div>
+                    </div>
+                  </div>
+                  <div class="mt-md">
+                    <em>
+                      “Olá meu nome é
+                      <strong class="text-orange">João</strong> e eu tenho
+                      interesse no curso que vocês estão ofertando como faço
+                      para me inscrever obrigado”
+                    </em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Entenda o mercado de áudios</h2>
+          </div>
+          <div
+            class="col-md-6 col-xs-12 display-flex align-stretch justify-stretch"
+          >
+            <div class="am-card flex-1">
+              <div class="am-card__content">
+                <p>
+                  <strong class="statistics"
+                    ><img
+                      src="images/chart-busca@2x.png"
+                      class="am-chart-icon"
+                      alt=""
+                    />
+                    50%</strong
+                  >
+                  das buscas online serão realizadas por voz em 2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xs-12 display-flex align-stretch justify-stretch"
+          >
+            <div class="am-card flex-1">
+              <div class="am-card__content">
+                <p>
+                  <strong class="statistics"
+                    ><img
+                      src="images/chart-qualificacao@2x.png"
+                      style="width: 3rem"
+                      class="am-chart-icon"
+                      alt=""
+                    />
+                    82%</strong
+                  >
+                  dos leads qualificados via áudio são convertidos em vendas
+                  online
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xs-12 display-flex align-stretch justify-stretch"
+          >
+            <div class="am-card flex-1">
+              <div class="am-card__content">
+                <p>
+                  <strong class="statistics"
+                    ><img
+                      src="images/chart-brasil@2x.png"
+                      class="am-chart-icon"
+                      alt=""
+                    />
+                    41%</strong
+                  >
+                  das pesquisas feitas no Brasil são realizadas por voz
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xs-12 display-flex align-stretch justify-stretch"
+          >
+            <div class="am-card flex-1">
+              <div class="am-card__content">
+                <p>
+                  <strong class="statistics"
+                    ><img
+                      src="images/chart-aumento@2x.png"
+                      style="width: 3rem"
+                      class="am-chart-icon"
+                      alt=""
+                    />
+                    30%</strong
+                  >
+                  É o aumento de vendas das marcas que redesenharem seus sites
+                  para aceitar pesquisas visuais e por voz
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center mt-xxl mb-xxl">
+        <img src="images/mic-transition.svg" alt="" />
+      </div>
+
+      <a id="planos"></a>
+      <section class="container">
+        <div class="row pb-none">
+          <div class="col-xs-12">
+            <h2 class="ma-none text-center">
+              Escolha um plano e
+              <strong class="text-pink">comece agora mesmo</strong>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="am-card bg-blue text-white text-center">
+              <div class="am-card__content">
+                <h5 class="ma-none">
+                  Todos os planos com
+                  <strong>14 dias grátis para testar</strong>. Confira o
+                  regulamento. <sup>1</sup>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="am-card">
+              <div class="am-card__content">
+                <img src="images/icon-basico.svg" alt="" />
+                <h4 class="text-orange mb-none mt-sm">Básico</h4>
+                <div class="am-card__subtitle">R$ 99,00/mês</div>
+                <ul class="am-list am-list__checklist" style="min-height: 8rem">
+                  <li>300 mensagens com análise de sentimento<sup>2</sup></li>
+                  <li>150 minutos de áudio transcritos</li>
+                  <li>Integração com e-mail</li>
+                </ul>
+                <a
+                  href="https://app.audiomind.com.br/properties/new"
+                  class="am-btn am-btn--secondary bg-orange"
+                  >Criar conta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="am-card">
+              <div class="am-card__content">
+                <img src="images/icon-avancado.svg" alt="" />
+                <h4 class="text-pink mb-none mt-sm">Avançado</h4>
+                <div class="am-card__subtitle">R$ 179,00/mês</div>
+                <ul class="am-list am-list__checklist" style="min-height: 8rem">
+                  <li>600 mensagens com análise de sentimento<sup>2</sup></li>
+                  <li>300 minutos de áudio transcritos</li>
+                  <li>Integração com e-mail</li>
+                </ul>
+                <a
+                  href="https://app.audiomind.com.br/properties/new"
+                  class="am-btn am-btn--secondary bg-pink"
+                  >Criar conta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="am-card">
+              <div class="am-card__content">
+                <img src="images/icon-customizado.svg" alt="" />
+                <h4 class="text-blue mb-none mt-sm">Customizado</h4>
+                <div class="am-card__subtitle">Sob medida</div>
+                <ul class="am-list am-list__checklist" style="min-height: 8rem">
+                  <li>Mensagens e volumes de transcrição sob medida</li>
+                  <li>Suporte na implementação</li>
+                </ul>
+                <a href="" class="am-btn am-btn--secondary bg-blue"
+                  >Entre em contato</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 font-small">
+            <p>
+              <sup>1</sup> Condição válida apenas para o primeiro site
+              adicionado à conta.
+            </p>
+            <p>
+              <sup>2</sup> Existe um limite de mensagens enviadas que
+              corresponde ao dobro do limite de mensagens com transcrição. Uma
+              vez ultrapassado o limite de transcrição ou análise de sentimento,
+              seu player continua funcionando, apenas armazenando os áudios sem
+              a transcrição e análise.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-dark-04 text-white mt-xxl">
+        <div class="container row align-center pt-xxl pb-xxl">
+          <div class="col-md-6 col-xs-12">
+            <img src="images/audiomind-logo-negativo.png" alt="" />
+            <p style="opacity: 0.5">
+              © Audiomind 2020 - Todos os direitos reservados
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-12 text-right">
+            <p style="opacity: 0.7">
+              R. Aureliano Guimarães, 172<br />
+              05727-160 | São Paulo - SP
+            </p>
+            <p style="opacity: 0.4">+55 11 4858-6664</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

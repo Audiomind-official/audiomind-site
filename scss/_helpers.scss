@@ -1,0 +1,126 @@
+@import "variables/main.scss";
+
+.max-full-width {
+  max-width: 100%;
+  height: auto;
+}
+
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
+$spacing: (
+  "none" 0rem,
+  "xs" 0.25rem,
+  "sm" 0.5rem,
+  "md" 0.75rem,
+  "lg" 1rem,
+  "xl" 2rem,
+  "xxl" 4rem
+);
+
+@each $align in (left, right, center, justify) {
+  .text-#{$align} {
+    text-align: $align !important;
+  }
+
+}
+
+@each $display in (flex, block, inline-block, none) {
+  .display-#{$display} {
+    display: $display !important;
+  }
+}
+
+@each $align in (normal, stretch, center, start, end, flex-start, flex-end) {
+  .align-#{$align} {
+    align-items: $align !important;
+  }
+}
+
+@each $justify in (start, center, space-between, space-around, space-evenly) {
+  .justify-#{$justify} {
+    justify-content: $justify !important;
+  }
+}
+
+@each $class-type, $type in ("p" "padding", "m" "margin") {
+  @each $class,
+    $property in ("a" "", "l" "-left", "r" "-right", "t" "-top", "b" "-bottom")
+  {
+    @each $name, $size in $spacing {
+      .#{$class-type}#{$class}-#{$name} {
+        #{$type}#{$property}: $size !important;
+      }
+    }
+  }
+}
+
+
+@each $flex in (1, 2, 3, 4, 5, 6) {
+  .flex-#{$flex} {
+    flex: $flex !important;
+  }
+}
+
+$colors: (
+  orange $color-orange,
+  pink $color-pink,
+  purple $color-purple,
+  blue $color-blue,
+  green $color-green,
+  red $color-red,
+  yellow $color-yellow,
+  white white,
+  light-01 $color-light-01,
+  light-02 $color-light-02,
+  light-03 $color-light-03,
+  light-04 $color-light-04,
+  dark-01 $color-dark-01,
+  dark-02 $color-dark-02,
+  dark-03 $color-dark-03,
+  dark-04 $color-dark-04
+);
+
+@each $name, $color in $colors {
+  .color-#{$name} {
+    --color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+    --color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+    --color: $color;
+  }
+}
+
+.bg-gradient {
+  background: rgb(39, 37, 120);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(39, 37, 120, 1) 0%,
+    rgba(120, 26, 119, 1) 50%,
+    rgba(185, 33, 52, 1) 100%
+  );
+}
